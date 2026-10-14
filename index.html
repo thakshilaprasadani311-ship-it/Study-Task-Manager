@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Study Task Manager</h1>
+      <p>Plan your study sessions and track your progress.</p>
+    </header>
+
+    <form id="task-form" class="card form-card">
+      <h2>Add a study task</h2>
+      <label for="task-name">Task name</label>
+      <input type="text" id="task-name" placeholder="e.g. Review chapter 4" autocomplete="off">
+
+      <label for="task-subject">Subject</label>
+      <input type="text" id="task-subject" placeholder="e.g. Mathematics" autocomplete="off">
+
+      <p id="error-message" class="error" hidden></p>
+      <button type="submit" class="btn-primary">Add Task</button>
+    </form>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span class="stat-number" id="total-count">0</span>
+        <span class="stat-label">Total</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="completed-count">0</span>
+        <span class="stat-label">Completed</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="remaining-count">0</span>
+        <span class="stat-label">Remaining</span>
+      </div>
+    </section>
+
+    <section class="card list-card">
+      <h2>Your tasks</h2>
+      <ul id="task-list"></ul>
+      <p id="empty-state" class="empty-state">No study tasks yet. Add one above to get started.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
