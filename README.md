@@ -35,3 +35,6 @@ Cursor AI helped with generating, testing, and improving the application.
 ## Author
 
 GitHub: [thakshilaprasadani311-ship-it](https://github.com/thakshilaprasadani311-ship-it)
+## App Screenshot
+
+![Study Task Manager](Study-Task-Manager.png)
